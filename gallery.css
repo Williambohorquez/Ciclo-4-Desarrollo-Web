@@ -1,0 +1,106 @@
+html,body,form /*que tan limpio es este codigo*/
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    background-color: white;
+    overflow: hidden;
+}
+.encabezado
+{
+    display: flex;
+    height:11vh;
+    position:fixed;
+    width:100%;
+    margin-top:-3vh;
+}
+
+#estructura{
+    display:flex;
+    height:61vh;
+    margin-top:15vh;
+    margin-bottom:1vh;
+    flex-direction:column;
+}
+
+.columna{
+    width:auto;
+    display: inline-grid;
+    margin: 10pt 2pt 10pt 2pt;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+.filas{
+    width:100%;
+}
+
+
+#TIC{
+    -webkit-text-stroke: 2px rgb(240, 173, 50);
+    color: rgb(59, 59, 226);
+    font-size: 50pt;
+}
+
+
+.galeria{
+    padding: 10pt 10pt 10pt 10pt;
+    overflow:auto;
+    background-color:rgb(97, 206, 240);
+    height:55vh;
+    margin:2vh 2vh 2vh 2vh;
+}
+
+.pic{
+    width:100pt;
+    vertical-align: middle;
+    border-radius:100pt;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border: solid chartreuse;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    background-color:aquamarine;
+}
+
+.pic:hover{
+    transform : scale(2);
+    border-radius:100%;
+}
+
+#buscar{
+    text-align: center;
+    padding: 10pt;
+}
+
+.Tbuscar{
+    width: 100%;
+    background-color: rgb(143, 180, 223);
+    border-radius: 10pt;
+    height: 20px;
+    color:rgb(59, 59, 226);
+    font-weight: 600;
+    -webkit-text-stroke: 0.2px rgb(240, 173, 50);
+    font-size: 13pt;
+}
+
+.Tbuscar::placeholder{
+    color:rgb(59, 59, 226);
+    -webkit-text-stroke: 0.2px rgb(240, 173, 50);
+    font-weight: 600;
+    font-size: 13pt;
+}
+
+.Tbuscar:focus{
+    outline: none;
+    transform: scaleY(1.1);
+}
+
+.fbuscar{
+    background-color:transparent;
+    overflow:hidden;
+    height: 25px;
+    padding-right: 1vh;
+}

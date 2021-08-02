@@ -1,0 +1,75 @@
+html,body,form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    height: 100vh;
+    background-color: white;
+}
+.botones
+{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(26, 134, 184);;
+    border-radius: 10pt;
+}
+.contenedor-columnas
+{
+    flex:4;
+    display: flex; 
+    justify-content: space-around;
+    
+}
+.pic
+{
+    width: 63%;
+    background-color: aqua;
+    border-radius: 10pt;
+    align-items: center;
+
+}
+img
+{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+.atributos
+{
+    width: 33%;
+    background-color: blueviolet;
+    border-radius: 10pt;
+}
+.btn1, .btn2
+{
+    border-radius: 25pt;
+    background-color: white;
+    flex: 2 auto;
+    margin: 30px;
+    font-size: 40px;
+    line-height: 1.5;
+
+}
+.fila
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    font-size: 45px;
+    
+    
+}
+.fila2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px;
+    font-size: 45px;
+}
+textarea
+{
+    resize: none;
+    
+}

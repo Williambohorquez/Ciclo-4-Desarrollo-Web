@@ -1,0 +1,45 @@
+
+{% extends "base.html" %}
+
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+
+    <section id="buscar">
+        <form name="fbuscar" class="fbuscar" method="POST">
+        <input
+        type="text"
+        id="Buscar"
+        name="Buscar"
+        class="Tbuscar" 
+        placeholder="Buscar imagen"
+        onkeypress='JavaScript:checkEnter(event)' 
+        maxlength="20"
+        minlength="4"
+        required
+        />
+        </form>
+    </section>
+
+    {% if pictures %}
+
+       
+        <div class="galeria">
+            {% for pic in pictures %}
+            <div class="columna">
+                <img class="pic" src='{{ pic[0] }}/{{ pic[1] }}' alt="imagen no carga" width="150" title="{{ pic[2] }}" onmousedown="JavaScript:img()">
+                <div class="filas">
+                    <a href="../download/{{ pic[3] }}/{{ pic[1] }}"><input class="btn2" type="button" value="Descargar"></a> 
+                </div>
+            </div>
+            {% endfor %}
+        </div> 
+    
+
+    {% endif %}
+        
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+
+{% extends "base.html" %}
+
+
+{% block contenido %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/edition.css') }}">
+    <form action="" method="POST">
+        
+        <div class="botones">
+            <div> <!--botonguardar-->
+                <input
+                type="button"
+                class="btn1"
+                name="guardarImg"
+                id="guardarImg"
+                value="Guardar"
+                onclick="charge()"
+            />
+            </div>
+            <div><!--boton actualizar-->
+                <input
+                    type="button"
+                    class="btn2"
+                    name="actualizarImg"
+                    id="actualizarImg"
+                    value="Actualizar"
+                    onclick="Update()"
+                />
+            </div>            
+        </div>
+                
+        <div class="contenedor-columnas">
+            
+            <div class="pic" ><!--columna izquierda-->
+                <img src="carro5.jpg"  width="530" height="430" alt="imagen no encontrada">
+            </div>
+            
+            <div class="atributos"> <!--columna derecha-->
+                <div class="fila">
+                    <div class="etiqueta" >Nombre</div>
+                    <div class="casilla">
+                        <input type="text" name="nombreImg" id="nombreImg" minlength="8" required/>
+                    </div>
+                </div>
+                    
+                <div class="fila">
+                    <div class="etiqueta">Tag</div>
+                    <div class="casilla">
+                        <input type="text" name="tagImg" id="tagImg" minlength="8" required/>
+                    </div>
+                </div>
+    
+                <div class="fila2">
+                    <div class="etiqueta" >Descripción</div>
+                    <div class="casilla">
+                        <textarea name="DescImg" id="DescImg" cols="52" rows="20"></textarea>
+                    </div>
+                </div>
+
+            </div>       
+        </div>            
+    </form>
+
+    {% endblock %}

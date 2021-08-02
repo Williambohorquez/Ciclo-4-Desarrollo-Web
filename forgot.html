@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/forgot.css') }}">
+
+
+<div class="principal">
+
+    <div class="fila">
+        <label class="titulo" >Recuperación de contraseña</label>
+            </div>
+                <form class="forgot" name="Forgot" method="POST" action="">
+            <div class="fila">
+        <label class="cuerpo" for="email">Ingrese su correo para proceder con el envío del enlace de recuperación</label>
+</div>
+<div class="fila">
+    <input class="texto" type="email" name="email" id="email" placeholder="Correo electrónico" required minlength="10">
+</div>
+
+<div class="filaC">
+    <input class="btn" type="button" name="recuperar" id="recuperar" value="Recuperar contraseña" onclick="JavaScript:Recuperar()">
+    <input class="btn" type="button" name="cancelar" id="cancelar" value="Cancelar" onclick="JavaScript:document.location.href='/'">
+</div>
+</form>
+    </div>
+    
+    {% endblock %}

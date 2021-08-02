@@ -1,0 +1,124 @@
+
+.center{
+    display: flex;
+    justify-content: center;
+    
+    margin: 0 auto;
+    top:0;
+    width:100%;
+    position:fixed;
+    margin-top:30vh;
+}
+
+#inicio{
+    background-color: rgb(26, 134, 184);
+    min-height: 100%;
+    width: 80%; 
+    max-width: 1000px;
+    border-radius: 40pt;    
+    padding: 20px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#buscar{
+    width: 80%;
+}
+
+.Tbuscar{
+    width: 100%;
+    background-color: rgb(143, 180, 223);
+    padding: 10px;
+    border-radius: 10pt; 
+    height: 20px;
+    color:rgb(59, 59, 226);
+    font-weight: 600;
+    -webkit-text-stroke: 0.2px rgb(240, 173, 50);
+    font-size: 13pt;
+}
+
+.Tbuscar::placeholder{
+    color:rgb(59, 59, 226);
+    -webkit-text-stroke: 0.2px rgb(240, 173, 50);
+    font-weight: 600;
+    font-size: 13pt;
+}
+
+.Tbuscar:focus{
+    outline: none;
+    transform: scaleY(1.1);
+}
+
+#subinicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.izquierda{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;    
+}
+
+#register-btn{
+    width: 200px;
+    text-align: end;
+}
+
+.iLogin{
+    border-radius: 20px;
+    margin-bottom: 10px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 13pt;
+}
+
+.iLogin:focus{
+    outline: none;
+    transform: scaleY(1.1);
+}
+
+
+@media (max-width: 800px) {
+    body{
+        overflow: scroll;
+    }
+
+    #TIC{
+        margin: 20px 0 30px;
+    }
+
+    #cuerpo{
+        font-size: 12pt;
+        margin-bottom: 20pt;
+    }
+    #registro{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #register-btn{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #buscar{
+        width: 100%;
+    }
+    
+    .Tbuscar{
+        width: auto;      
+    }
+
+    .AreaTotal{
+        width: 100%;
+    }
+
+    
+}
+
+    

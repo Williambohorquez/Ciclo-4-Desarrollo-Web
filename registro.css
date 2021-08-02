@@ -1,0 +1,114 @@
+
+body{
+    background: -webkit-linear-gradient(90deg, rgb(236, 236, 119) 10%, rgb(55, 84, 218) 90%);
+    background: -moz-linear-gradient(90deg, rgb(236, 236, 119) 10%, rgb(55, 84, 218) 90%);
+    background: -ms-linear-gradient(90deg, rgb(236, 236, 119) 10%, rgb(55, 84, 218) 90%);
+    background: -o-linear-gradient(90deg, rgb(236, 236, 119) 10%, rgb(55, 84, 218) 90%);
+    background: linear-gradient(90deg, rgb(236, 236, 119) 10%, rgb(55, 84, 218) 90%);
+    font-size: 14pt;
+    overflow: auto;
+}
+
+img.home{
+    float: left;
+    margin-left: 10pt;
+    min-width: 20pt;
+    min-height: 20pt;
+    max-width: 30pt;
+    max-height: 30pt;
+}
+
+img.lateral{
+    float: left;
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 10%;
+    
+}
+
+
+.bloque{
+    padding-top:20vh
+}
+
+div.der{
+    min-width: 45%;
+    opacity: 80%;
+    float: right;
+    margin-inline-start: 15pt;
+    width: 45%;
+    max-width: 400pt;
+    margin-right: 15pt;
+    margin-top: 30pt;
+    margin-bottom: 30pt;
+    border-radius: 5pt;
+    background-color: white;
+    text-align: center;
+    padding: 10pt;
+    color:black;
+}
+
+p.justificado{
+    padding-left: 4pt;
+    padding-right: 4pt;
+    text-align: justify;
+    font-size: 14pt;
+}
+
+h3{
+    text-align: center;
+}
+
+.texto{
+    margin: 5pt 5pt 5pt 5pt;
+    border-radius: 2pt;
+    font-size: 14pt;
+    min-width: 90%;
+    max-width: 90%;
+}
+
+.der{
+    align-content: flex-end;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    padding: 10pt
+}
+
+@media (max-width: 400pt) {
+    #imagen{
+        width:0%;
+    }
+
+div.der{
+    margin-inline-start: 1pt;
+    max-width: 400pt;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 5pt;
+    padding: 0;
+    width:100%;
+}
+
+.bloque{
+    width:100%;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    padding-top:5vh
+
+}
+
+
+#TIC{
+    width:0%;
+}
+
+.TIC{
+    font-size: 0pt;
+
+}
+}

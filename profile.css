@@ -1,0 +1,229 @@
+html,body,form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    background-color: white;
+    overflow: hidden;
+}
+.encabezado
+{
+    display: flex;
+    height:11vh;
+    position:fixed;
+    width:100%;
+    margin-top:-3vh;
+    top:25vh;
+}
+
+
+
+#TIC{
+    -webkit-text-stroke: 2px rgb(240, 173, 50);
+    color: rgb(59, 59, 226);
+    font-size: 50pt;
+}
+
+.TIC{
+
+    margin-bottom:10pt;
+}
+
+#subir{
+    top:33vh;
+    margin: 2pt 2pt 2pt 2pt;
+    color: black;
+    position:fixed;
+    width:100%;
+    height:11.5vh;
+    overflow:hidden;
+    /* display: flex; */
+    border-radius:15pt;
+}
+
+#Mitad1{
+    display:flex;
+    top:0;
+    width:100%;
+    background-color: rgb(26, 134, 184);
+}
+#Mitad2{
+    padding-bottom:1vh;
+    text-align: center;
+    background-color: rgb(26, 134, 184);
+    margin-top:-1vh;
+}
+
+
+
+
+#uploadImg {
+    margin-top:5pt;
+    max-height:4vh
+}
+
+.usr
+{
+    display: flex;
+    background-color: rgb(26, 134, 184);
+    border-radius: 20pt;
+    width:fit-content;
+    overflow: hidden;
+    width:50vh;
+
+
+}
+.actualiz
+{
+    width:0;
+    background-color: rgb(184, 26, 176);
+    border-radius: 10pt;
+}
+
+.imgUsr
+{
+    width: 30%;
+}
+
+.profilepic{
+    max-height:100%;
+    max-width:100%;
+}
+
+.leyenda
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width:70%;
+}
+.Busub
+{
+    display: flex;
+    background-color: rgb(97, 206, 240);
+    border-style: solid 1px;
+}
+#textB
+{
+    background-color: white;
+    border-radius: 10pt;
+    width: 83%;
+}
+.btn1
+{
+    background-color: rgb(97, 206, 240);
+    width: 13%;
+    border-radius: 10pt;
+    outline: none;
+}
+
+.ReDe
+{
+    width:30%;
+    display: flex;
+    border-style:solid;
+}
+
+.detalle{
+    background-color: blue;
+    width:35vh;
+    overflow: auto;
+    margin-bottom:38vh;
+}
+
+#submitImg{
+    background-color: blue;
+    height:90%;
+}
+
+.columna{
+    width:auto;
+    display: inline-grid;
+    margin: 10pt 2pt 10pt 2pt;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+.galeria{
+    width:100%;
+    padding: 10pt 10pt 10pt 10pt;
+    overflow:auto;
+    background-color: rgb(97, 206, 240);
+    margin-bottom:38vh;
+}
+
+.filas{
+    width:100%;
+}
+
+.pic{
+    width:100pt;
+    vertical-align: middle;
+    border-radius:100pt;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border: solid chartreuse;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    background-color:rgb(97, 206, 240);
+}
+
+.pic:hover{
+    transform : scale(1.5);
+    border-radius:100%;
+}
+
+#upload{
+    background-color: grey;
+    width:fit-content;
+    margin-bottom:1vh;
+}
+
+#uploadImg{
+    width: fit-content;
+}
+
+#public{
+    flex-direction:row
+}
+
+#cuerpo{
+    display: flex;
+    height:87%;
+    position:fixed;
+    top:45vh;
+    width:100%
+}
+
+
+.Mitad1-1{
+    padding-top:1vh;
+    padding-left:1vh;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+}
+.Mitad1-2{
+    margin-top:1vh;
+    width:50%;
+    margin-right:5vh;
+    margin-left:30vh;
+    display:flex;
+    align-content: flex-end;
+}
+
+
+#description{
+    width:90%
+}
+
+#tags{
+    width:100%;
+    margin-bottom:1vh;
+}
+
+.fila1{
+    width:50%;
+}

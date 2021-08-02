@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-image: url('../img/Fondo.jpg');
+    background-position: top;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    padding-bottom: 5%;
+}
+
+#estructura{
+    display:flex;
+    flex-direction:column;
+    height:55vh;
+    margin-top:5vh;
+}
+
+#header1{
+
+    background-color: rgb(26, 134, 184);
+    height:fit-content;
+    max-height:6vh;
+    overflow:hidden;
+}
+
+#encabezado1{
+    height: fit-content;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+}
+
+#general{
+    padding: 10pt 10pt 10pt 10pt;
+}
+
+.resaltado{
+    color: chartreuse;
+}
+
+.flash{
+    background-color: black;
+    max-width:max-content ;
+    /*margin-bottom:10pt;
+    display:flex;*/
+
+    margin-bottom:16vh;
+    flex-direction:column;
+    position: relative;
+}
+
+
+#TIC{
+    text-align: center;
+    width:100%;
+    position:fixed;
+    top:0;
+    margin-top:3vh;
+
+}
+
+.TIC{
+    -webkit-text-stroke: 2px rgb(240, 173, 50);
+    color: rgb(59, 59, 226);
+    font-size: 80pt;
+
+}
+
+#TIC2{
+    text-align: center;
+    -webkit-text-stroke: 2px rgb(240, 173, 50);
+    color: rgb(59, 59, 226);
+    font-size: 40pt;
+    margin: 10pt 10pt 10pt 10pt;
+}
+
+#cuerpo{
+    text-align: center;
+    font-size: 16pt;
+    -webkit-text-stroke: 0.2px black;
+    color: white;
+    margin-bottom: 40pt;
+}
+
+
+.btn{
+    background-color: rgb(143, 180, 223);
+    -webkit-text-stroke: 0.2px rgb(240, 173, 50);
+    border-radius: 10pt;
+    height: 40pt;
+    color:rgb(59, 59, 226);
+    font-size: 13pt;
+    font-weight: 600;
+    outline: none;
+    width: 80%;
+    max-width: 200px;
+    min-width: 100px;
+    margin: 1pt 1pt 1pt 1pt;
+}
+
+.btn2{
+    background-color: rgb(143, 180, 223);
+    -webkit-text-stroke: 0.2px rgb(240, 173, 50);
+    border-radius: 10pt;
+    height: 25pt;
+    color:rgb(59, 59, 226);
+    font-size: 13pt;
+    font-weight: 600;
+    outline: none;
+    width: 80%;
+    max-width: 100px;
+    min-width: 50px;
+    margin: 0 auto;
+}
+
+.btn:active{
+    transform: scaleY(1.1);
+    background-color: #561B8D;
+    color: rgb(143, 180, 223);
+}
+
+
+.page-footer{
+    position: fixed; 
+    bottom: 0;
+    height: 6%;            /* Footer height */
+    width: 100%;
+    background-color: rgb(26, 134, 184);
+    display:flex;
+    flex-direction:row;
+}
+
+#logout{
+    float: right;
+}
+
+#copyright{
+    width:50%
+
+}
+
+#lastAccess{
+    width:50%;
+    text-align:right;
+    display:flex;
+    flex-direction:column
+
+}
+
+
+/* Desde aquí comienza el código para mostrar la imagen que se va a eliminar*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-height: 70%;
+    max-width: 80%;
+  }
+  
+/* Caption of Modal Image */
+#botonModal {
+    margin-left:10%;
+    color: #ccc;
+    background-color: rgb(143, 180, 223);
+    -webkit-text-stroke: 0.2px rgb(240, 173, 50);
+    border-radius: 10pt;
+    height: 40pt;
+    color:rgb(59, 59, 226);
+    font-size: 13pt;
+    font-weight: 600;
+    outline: none;
+    width: 80%;
+    max-width: 200px;
+    min-width: 100px;
+      
+    }
+    
+    .GrupoBtn{
+     text-align: center;
+    margin-top:10pt;
+    display:flex;
+    height:6vh;
+    width:100%;
+    flex-direction:row;
+    align-content: center;
+    padding-left:10%;
+    }
+    
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.3s;
+    animation-name: zoom;
+    animation-duration: 0.3s;
+    
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+    ;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+/* Aquí termina el código para mostrar la imagen que se va a eliminar*/

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <title>PicTIC - Red social de programadores</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </head>
+
+  <body>
+
+    <div id="estructura">
+      <div id="encabezado1">
+        <section id="header1">
+              PicTIC:
+              {% if 'userID' not in session %}
+                <a href="/index">Inicio</a>
+              {% endif %}
+            <a href="/gallery">Galería pública</a>
+            {% if 'userID' in session %}
+              <a href="/profile">Área personal</a>
+              <div id="logout">
+                {{ session['userID'] }}
+                {% if  session['profile']  == 'U' %}
+                &nbsp;(Usuario)
+                {% elif session['profile'] == 'M' %}
+                &nbsp;(Moderador)
+                {% elif session['profile'] == 'A' %}
+                &nbsp;(Administrador)
+                {% endif %}
+                <a href="/logout">Salir</a>
+              </div>
+            {% else %}
+            <a href="/register">Registrarse</a>
+              <div id="logout">
+                &nbsp;(invitado)
+              </div>
+            {% endif %}
+        </section>
+        <section class="content">
+          {% for message in get_flashed_messages() %}
+          <div class="flash">{{ message }}
+          
+            {% endfor %}
+              {% if link=="forgot" %}
+                <a class="resaltado" href="../forgot">Recuperar contraseña</a>
+              {% endif %}
+          </div>
+        </section>
+        <section id="TIC">
+          <h1 class="TIC">PicTIC</h1>
+        </section>
+
+    
+        {% block contenido %}
+        {% endblock %}
+      
+      </div>
+
+      <div class="page-footer">
+        <div id="copyright">
+          <label>&copy;Grupo E - MisiónTIC 2022</label>
+        </div>
+          {% if 'last_access' in session %}
+          
+          <div id="lastAccess">
+            <label>
+            Fecha de último acceso
+          </label>
+          <label>
+            {{  session['last_access'] }}
+        </label>
+
+          </div>
+
+          {% endif %}
+      </div>
+
+
+    </div>
+
+  </body>
+</html>
